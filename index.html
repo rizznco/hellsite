@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?
+family=EB+Garamond&amp;display=swap"
+rel="stylesheet">
+<title>THE PIT.</title>
+<style type="text/css">
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  color: #FF0000;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-family:'EB Garamond',serif;
+  color: #FF0000;
+  font-weight: bold;
+}
+a {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color: #FF0000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 5px solid #FF0000;
+  padding: 20px;
+  transition: all 0.3s ease;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+a img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #FF0000;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* add this media query for smaller screens */
+  a {
+    width: 100%;
+  }
+}
+
+#image-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+#image-container img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+</head>
+<body>
+<h1>Welcome to the pit. </h1>
+<p><strong><em>enter at your own risk.</em></strong></p>
+<a href="PG1.html"><img src="images/enter.gif" alt="Image 1"></a>
+<a href="https://Google.com"><img src="images/flee.gif" alt="Image 2"></a>
+<div id="container">
+<img src="images/penetratedblinkie.png">
+<img src="images/smellsblinkie.jpg">
+<img src="images/safesexblinkie.png">
+<img src="images/minecraftblinkie.png">
+<img src="images/iceblinkie.png">
+<img src="images/drawinmathblinkie.jpg">
+<img src="images/drawmycharacterblinkie.png">
+<img src="images/bodyhorrorblinkie.png">
+</div>
+<script>
+const container =
+document.getElementByld("container");
+
+container.addEventListener("mouseover",() 
+=>{
+  container.style.animation = "scroll 5s linear infinite";
+});
+container.addEventListener("mouseout",()
+=>{
+  container.style.animation = "";
+});
+</script>
+</body>
+</html>
